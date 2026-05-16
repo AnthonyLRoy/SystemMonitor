@@ -409,6 +409,7 @@ FodyWeavers.xsd
 
 # Build artifacts / binaries
 EventReceiver.zip
+Dan.Client.PerfMonReader/EventReceiver.zip
 
 # VS Code files for those working on multiple tools
 .vscode/*
