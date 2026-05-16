@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<eventlogs>
+  <eventlog>
+    <name>Service Error log</name>
+    <description>Get errors from application service</description>
+    <eventlogname>Application</eventlogname>
+    <source>Application</source>
+    <machinename>HOME</machinename>
+    <level>Information</level>
+    
+     <schedule>
+      <daypattern>1111111</daypattern>
+      <start>07:15:00</start>
+      <end>21:15:00</end>
+      <frequency>S</frequency>
+      <every>30</every>
+    </schedule>
+  </eventlog>
+  <eventlog>
+    <name>Service Error log</name>
+    <description>Get errors from application service</description>
+    <eventlogname>Application</eventlogname>
+    <source>LocationProvider</source>
+    <machinename>HOME</machinename>
+    <level>Information</level>
+    
+    <schedule>
+      <daypattern>1111111</daypattern>
+      <start>07:15:00</start>
+      <end>21:15:00</end>
+      <frequency>S</frequency>
+      <every>30</every>
+    </schedule>
+  </eventlog>
+</eventlogs>

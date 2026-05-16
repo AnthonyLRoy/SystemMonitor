@@ -1,0 +1,21 @@
+﻿<Application x:Class="SystemViewer.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:s="clr-namespace:SystemViewer.Designer"
+             StartupUri="Forms/MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Designer/Styles/Shared.xaml"/>
+                <ResourceDictionary Source="Designer/Styles/ToolBar.xaml"/>
+                <ResourceDictionary Source="Designer/Styles/GroupBox.xaml"/>
+                <ResourceDictionary Source="Designer/Styles/Expander.xaml"/>
+                <ResourceDictionary Source="Designer/Styles/ScrollBar.xaml"/>
+                <ResourceDictionary Source="Designer/ApplicationToolbar.xaml"/>
+                <ResourceDictionary Source="Designer/Resources/DesignerItem.xaml"/>
+                <ResourceDictionary Source="Designer/Resources/Connection.xaml"/>
+
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

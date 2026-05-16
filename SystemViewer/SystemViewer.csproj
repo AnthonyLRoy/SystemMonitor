@@ -1,0 +1,318 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{490102FA-3208-4842-A6DA-4BFE9F367156}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SystemViewer</RootNamespace>
+    <AssemblyName>SystemViewer</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Castle.Core">
+      <HintPath>..\packages\Castle.Core.3.0.0.4001\lib\net40-client\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\packages\log4net.2.0.3\lib\net40-full\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="SimpleConfigSections">
+      <HintPath>..\packages\SimpleConfigSections.1.0.0.7\lib\net35\SimpleConfigSections.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="Xceed.Wpf.AvalonDock">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.2.2.1\lib\net40\Xceed.Wpf.AvalonDock.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.AvalonDock.Themes.Aero">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.2.2.1\lib\net40\Xceed.Wpf.AvalonDock.Themes.Aero.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.AvalonDock.Themes.Expression">
+      <HintPath>..\packages\AvalonDock.2.0.2000\lib\net40\Xceed.Wpf.AvalonDock.Themes.Expression.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.AvalonDock.Themes.Metro">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.2.2.1\lib\net40\Xceed.Wpf.AvalonDock.Themes.Metro.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.AvalonDock.Themes.VS2010">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.2.2.1\lib\net40\Xceed.Wpf.AvalonDock.Themes.VS2010.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.DataGrid">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.2.2.1\lib\net40\Xceed.Wpf.DataGrid.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.Toolkit">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.2.2.1\lib\net40\Xceed.Wpf.Toolkit.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Commands\CommandManager.cs" />
+    <Compile Include="Commands\ICommandManager.cs" />
+    <Compile Include="Config\ExternalLibraries.cs" />
+    <Compile Include="Config\IReader.cs" />
+    <Compile Include="ControlsTimer.cs" />
+    <Compile Include="Controls\BindingHelper.cs" />
+    <Compile Include="Controls\DiagramCanvas.Command.cs" />
+    <Compile Include="Controls\DiagramCanvas.cs" />
+    <Compile Include="Controls\IDiagramCanvas.cs" />
+    <Compile Include="Designer\Adorners\ConnectorAdorner.cs" />
+    <Compile Include="Designer\Adorners\RubberbandAdorner.cs" />
+    <Compile Include="Designer\Connection.cs" />
+    <Compile Include="Designer\Adorners\ConnectionAdorner.cs" />
+    <Compile Include="Designer\Connector.cs" />
+    <Compile Include="Designer\Controls\DragThumb.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Designer\Controls\RelativePositionPanel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Designer\Controls\ResizeThumb.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Designer\DesignerItem.cs" />
+    <Compile Include="Designer\PathFinder.cs" />
+    <Compile Include="Enums\Enums.cs" />
+    <Compile Include="EventReaders\Reader.cs" />
+    <Compile Include="Forms\dialogs\fmNewDiagram.xaml.cs">
+      <DependentUpon>fmNewDiagram.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\dialogs\frmEmailLnk.xaml.cs">
+      <DependentUpon>frmEmailLnk.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\dialogs\frmEventLink.xaml.cs">
+      <DependentUpon>frmEventLink.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="gridClasses\Custom\EmailLinkEditor.cs" />
+    <Compile Include="GroupNameTask.cs" />
+    <Compile Include="Helper.cs" />
+    <Compile Include="Helpers\Libraries\ReaderLibrarys.cs" />
+    <Compile Include="Helpers\Libraries\ControlLibraries.cs" />
+    <Compile Include="Helpers\Validatation\FormValidation.cs" />
+    <Compile Include="Config\ILibrary.cs" />
+    <Compile Include="IGroupable.cs" />
+    <Compile Include="Infrastructure\Commands\LoadtoolBoxCommand.cs" />
+    <Compile Include="Infrastructure\Commands\SaveDiagramCommand.cs" />
+    <Compile Include="ISelectable.cs" />
+    <Compile Include="Managers\ControlManager.cs" />
+    <Compile Include="Controls\WindowsToolbox.xaml.cs">
+      <DependentUpon>WindowsToolbox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PropertyWindow.xaml.cs">
+      <DependentUpon>PropertyWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Infrastructure\Commands\DelegateCommand.cs" />
+    <Compile Include="Infrastructure\Commands\LoadPropertiesWindowCommand.cs" />
+    <Compile Include="Infrastructure\Commands\NewDiagramCommand.cs" />
+    <Compile Include="Infrastructure\Commands\OpenDiagramCommand.cs" />
+    <Compile Include="Managers\LayoutManager.cs">
+      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Managers\MenuManager.cs" />
+    <Compile Include="Config\MetricReaderLibrary.cs" />
+    <Compile Include="Models\DiagramRef.cs" />
+    <Compile Include="Models\EventListModel.cs" />
+    <Compile Include="Models\Menu\ActiveDiagrams.cs" />
+    <Compile Include="gridClasses\Custom\EventLinkEditor.cs" />
+    <Compile Include="gridClasses\DiagramControlProperties.cs" />
+    <Compile Include="gridClasses\DiagramProperties.cs" />
+    <Compile Include="Models\ToolBox\ToolBoxItem.cs" />
+    <Compile Include="PropertiesController.cs" />
+    <Compile Include="SelectionService.cs" />
+    <Compile Include="TimedCollector.cs" />
+    <Compile Include="ViewModel\ControlViewlModel.cs" />
+    <Compile Include="ViewModel\EventListViewModel.cs" />
+    <Compile Include="ViewModel\MenuViewModel.cs" />
+    <Compile Include="ViewModel\MenuViewModelBase.cs" />
+    <Compile Include="ViewModel\toolboxItems.cs" />
+    <Page Include="Controls\WindowsToolbox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Designer\ApplicationToolbar.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Designer\Resources\Connection.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Designer\Resources\DesignerItem.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Designer\styles\Expander.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Designer\styles\GroupBox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Designer\styles\ScrollBar.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Designer\styles\Shared.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Designer\styles\ToolBar.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Forms\dialogs\fmNewDiagram.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Forms\dialogs\frmEmailLnk.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Forms\dialogs\frmEventLink.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Forms\MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Forms\MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Forms\PropertyWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Models\Menu\FileMenu.cs" />
+    <Compile Include="Models\Menu\FileMenuEventArgs.cs" />
+    <Compile Include="Models\Menu\MenuModelBase.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="Graph1.dgml" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Dan.Common.Client\Dan.Common.Client.csproj">
+      <Project>{e1dc3160-636a-471a-b77b-cfb61ebe9214}</Project>
+      <Name>Dan.Common.Client</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dan.Common.Messages\Dan.Common.Messages.csproj">
+      <Project>{7926879c-d5ab-4364-aaa0-fdca4a20abdd}</Project>
+      <Name>Dan.Common.Messages</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dan.monitor.Common\dan.monitor.Common.csproj">
+      <Project>{c65badde-6743-479d-a036-64bcedc14b3b}</Project>
+      <Name>dan.monitor.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Designer\Images\AlignObjectsBottom.png" />
+    <Resource Include="Designer\Images\AlignObjectsCenteredHorizontal.png" />
+    <Resource Include="Designer\Images\AlignObjectsCenteredVertical.png" />
+    <Resource Include="Designer\Images\AlignObjectsLeft.png" />
+    <Resource Include="Designer\Images\AlignObjectsRight.png" />
+    <Resource Include="Designer\Images\AlignObjectsTop.png" />
+    <Resource Include="Designer\Images\BringForward.png" />
+    <Resource Include="Designer\Images\BringToFront.png" />
+    <Resource Include="Designer\Images\Copy.png" />
+    <Resource Include="Designer\Images\Cut.png" />
+    <Resource Include="Designer\Images\Delete.png" />
+    <Resource Include="Designer\Images\DistributeObjectsHorizontal.png" />
+    <Resource Include="Designer\Images\DistributeObjectsVertical.png" />
+    <Resource Include="Designer\Images\GenericDocument.png" />
+    <Resource Include="Designer\Images\Group.png" />
+    <Resource Include="Designer\Images\OpenFolder.png" />
+    <Resource Include="Designer\Images\Paste.png" />
+    <Resource Include="Designer\Images\PasteBig.png" />
+    <Resource Include="Designer\Images\Print.png" />
+    <Resource Include="Designer\Images\Save.png" />
+    <Resource Include="Designer\Images\SendBackward.png" />
+    <Resource Include="Designer\Images\SendToBack.png" />
+    <Resource Include="Designer\Images\Ungroup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="MeterBar.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

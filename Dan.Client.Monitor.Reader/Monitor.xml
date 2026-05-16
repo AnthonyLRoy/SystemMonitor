@@ -1,0 +1,283 @@
+﻿<?xml version="1.0"?>
+<ArrayOfPerfCounter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <PerfCounter>
+    <Name>QUEUE_DESPATCH_OUT</Name>
+    <Category>"MSMQ Queue</Category>
+    <Counter>Messages in Queue</Counter>
+    <Instance>wsx-13g-356l8t\private$\order_queue$</Instance>
+    <Timer>12</Timer>
+    <Applicationname>out</Applicationname>
+    <InstanceName>Instance_01</InstanceName>
+    <Value>0</Value>
+  </PerfCounter>
+  <PerfCounter>
+    <Name>ActiveMemory</Name>
+    <Category>Memory</Category>
+    <Counter>Available Bytes</Counter>
+    <Instance>_Total</Instance>
+    <Timer>10</Timer>
+    <Applicationname>"DESPATCH_PROCESSOR</Applicationname>
+    <InstanceName></InstanceName>
+    <Value>0</Value>
+  </PerfCounter>
+  <PerfCounter>
+    <Name>P1a</Name>
+    <Category>Processor</Category>
+    <Counter>% Processor Time</Counter>
+    <Instance>_Total</Instance>
+    <Timer>10</Timer>
+    <Applicationname>"DESPATCH_PROCESSOR</Applicationname>
+    <InstanceName>_Total</InstanceName>
+    <Value>0</Value>
+  </PerfCounter>
+  <PerfCounter>
+    <Name>p2a</Name>
+    <Category>Processor</Category>
+    <Counter>% Processor Time</Counter>
+    <Instance>_Total</Instance>
+    <Timer>10</Timer>
+    <Applicationname>"DESPATCH_PROCESSOR</Applicationname>
+    <InstanceName>_Total</InstanceName>
+    <Value>0</Value>
+  </PerfCounter>
+  <PerfCounter>
+    <Name>p3</Name>
+    <Category>Processor</Category>
+    <Counter>% Processor Time</Counter>
+    <Instance>_Total</Instance>
+    <Timer>10</Timer>
+    <Applicationname>"DESPATCH_PROCESSOR</Applicationname>
+    <InstanceName>_Total</InstanceName>
+    <Value>0</Value>
+  </PerfCounter>
+  <PerfCounter>
+    <Name>p4</Name>
+    <Category>Processor</Category>
+    <Counter>% Processor Time</Counter>
+    <Instance>_Total</Instance>
+    <Timer>10</Timer>
+    <Applicationname>"DESPATCH_PROCESSOR</Applicationname>
+    <InstanceName>_Total</InstanceName>
+    <Value>0</Value>
+  </PerfCounter>
+  <PerfCounter>
+    <Name>p5</Name>
+    <Category>Processor</Category>
+    <Counter>% Processor Time</Counter>
+    <Instance>_Total</Instance>
+    <Timer>10</Timer>
+    <Applicationname>"DESPATCH_PROCESSOR</Applicationname>
+    <InstanceName>_Total</InstanceName>
+    <Value>0</Value>
+  </PerfCounter>
+  <PerfCounter>
+    <Name>p6</Name>
+    <Category>Processor</Category>
+    <Counter>% Processor Time</Counter>
+    <Instance>_Total</Instance>
+    <Timer>10</Timer>
+    <Applicationname>"DESPATCH_PROCESSOR</Applicationname>
+    <InstanceName>_Total</InstanceName>
+    <Value>0</Value>
+  </PerfCounter>
+  <PerfCounter>
+    <Name>p7</Name>
+    <Category>Processor</Category>
+    <Counter>% Processor Time</Counter>
+    <Instance>_Total</Instance>
+    <Timer>10</Timer>
+    <Applicationname>"DESPATCH_PROCESSOR</Applicationname>
+    <InstanceName>_Total</InstanceName>
+    <Value>0</Value>
+  </PerfCounter>
+  <PerfCounter>
+    <Name>p8</Name>
+    <Category>Processor</Category>
+    <Counter>% Processor Time</Counter>
+    <Instance>_Total</Instance>
+    <Timer>10</Timer>
+    <Applicationname>"DESPATCH_PROCESSOR</Applicationname>
+    <InstanceName>_Total</InstanceName>
+    <Value>0</Value>
+  </PerfCounter>
+  <PerfCounter>
+    <Name>p9</Name>
+    <Category>Processor</Category>
+    <Counter>% Processor Time</Counter>
+    <Instance>_Total</Instance>
+    <Timer>10</Timer>
+    <Applicationname>"DESPATCH_PROCESSOR</Applicationname>
+    <InstanceName>_Total</InstanceName>
+    <Value>0</Value>
+  </PerfCounter>
+  <PerfCounter>
+    <Name>p10</Name>
+    <Category>Processor</Category>
+    <Counter>% Processor Time</Counter>
+    <Instance>_Total</Instance>
+    <Timer>10</Timer>
+    <Applicationname>"DESPATCH_PROCESSOR</Applicationname>
+    <InstanceName>_Total</InstanceName>
+    <Value>0</Value>
+  </PerfCounter>
+  <PerfCounter>
+    <Name>p11</Name>
+    <Category>Processor</Category>
+    <Counter>% Processor Time</Counter>
+    <Instance>_Total</Instance>
+    <Timer>10</Timer>
+    <Applicationname>"DESPATCH_PROCESSOR</Applicationname>
+    <InstanceName>_Total</InstanceName>
+    <Value>0</Value>
+  </PerfCounter>
+  <PerfCounter>
+    <Name>p12</Name>
+    <Category>Processor</Category>
+    <Counter>% Processor Time</Counter>
+    <Instance>_Total</Instance>
+    <Timer>10</Timer>
+    <Applicationname>"DESPATCH_PROCESSOR</Applicationname>
+    <InstanceName>_Total</InstanceName>
+    <Value>0</Value>
+  </PerfCounter>
+  <PerfCounter>
+    <Name>p13</Name>
+    <Category>Processor</Category>
+    <Counter>% Processor Time</Counter>
+    <Instance>_Total</Instance>
+    <Timer>10</Timer>
+    <Applicationname>"DESPATCH_PROCESSOR</Applicationname>
+    <InstanceName>_Total</InstanceName>
+    <Value>0</Value>
+  </PerfCounter>
+  <PerfCounter>
+    <Name>p14</Name>
+    <Category>Processor</Category>
+    <Counter>% Processor Time</Counter>
+    <Instance>_Total</Instance>
+    <Timer>10</Timer>
+    <Applicationname>"DESPATCH_PROCESSOR</Applicationname>
+    <InstanceName>_Total</InstanceName>
+    <Value>0</Value>
+  </PerfCounter>
+  <PerfCounter>
+    <Name>p15</Name>
+    <Category>Processor</Category>
+    <Counter>% Processor Time</Counter>
+    <Instance>_Total</Instance>
+    <Timer>10</Timer>
+    <Applicationname>"DESPATCH_PROCESSOR</Applicationname>
+    <InstanceName>_Total</InstanceName>
+    <Value>0</Value>
+  </PerfCounter>
+  <PerfCounter>
+    <Name>p16</Name>
+    <Category>Processor</Category>
+    <Counter>% Processor Time</Counter>
+    <Instance>_Total</Instance>
+    <Timer>10</Timer>
+    <Applicationname>"DESPATCH_PROCESSOR</Applicationname>
+    <InstanceName>_Total</InstanceName>
+    <Value>0</Value>
+  </PerfCounter>
+  <PerfCounter>
+    <Name>p17</Name>
+    <Category>Processor</Category>
+    <Counter>% Processor Time</Counter>
+    <Instance>_Total</Instance>
+    <Timer>10</Timer>
+    <Applicationname>"DESPATCH_PROCESSOR</Applicationname>
+    <InstanceName>_Total</InstanceName>
+    <Value>0</Value>
+  </PerfCounter>
+  <PerfCounter>
+    <Name>p18</Name>
+    <Category>Processor</Category>
+    <Counter>% Processor Time</Counter>
+    <Instance>_Total</Instance>
+    <Timer>10</Timer>
+    <Applicationname>"DESPATCH_PROCESSOR</Applicationname>
+    <InstanceName>_Total</InstanceName>
+    <Value>0</Value>
+  </PerfCounter>
+  <PerfCounter>
+    <Name>p19</Name>
+    <Category>Processor</Category>
+    <Counter>% Processor Time</Counter>
+    <Instance>_Total</Instance>
+    <Timer>10</Timer>
+    <Applicationname>"DESPATCH_PROCESSOR</Applicationname>
+    <InstanceName>_Total</InstanceName>
+    <Value>0</Value>
+  </PerfCounter>
+  <PerfCounter>
+    <Name>p20</Name>
+    <Category>Processor</Category>
+    <Counter>% Processor Time</Counter>
+    <Instance>_Total</Instance>
+    <Timer>10</Timer>
+    <Applicationname>"DESPATCH_PROCESSOR</Applicationname>
+    <InstanceName>_Total</InstanceName>
+    <Value>0</Value>
+  </PerfCounter>
+  <PerfCounter>
+    <Name>p21</Name>
+    <Category>Processor</Category>
+    <Counter>% Processor Time</Counter>
+    <Instance>_Total</Instance>
+    <Timer>10</Timer>
+    <Applicationname>"DESPATCH_PROCESSOR</Applicationname>
+    <InstanceName>_Total</InstanceName>
+    <Value>0</Value>
+  </PerfCounter>
+  <PerfCounter>
+    <Name>p22</Name>
+    <Category>Processor</Category>
+    <Counter>% Processor Time</Counter>
+    <Instance>_Total</Instance>
+    <Timer>10</Timer>
+    <Applicationname>"DESPATCH_PROCESSOR</Applicationname>
+    <InstanceName>_Total</InstanceName>
+    <Value>0</Value>
+  </PerfCounter>
+  <PerfCounter>
+    <Name>p23</Name>
+    <Category>Processor</Category>
+    <Counter>% Processor Time</Counter>
+    <Instance>_Total</Instance>
+    <Timer>10</Timer>
+    <Applicationname>"DESPATCH_PROCESSOR</Applicationname>
+    <InstanceName>_Total</InstanceName>
+    <Value>0</Value>
+  </PerfCounter>
+  <PerfCounter>
+    <Name>p24</Name>
+    <Category>Processor</Category>
+    <Counter>% Processor Time</Counter>
+    <Instance>_Total</Instance>
+    <Timer>10</Timer>
+    <Applicationname>"DESPATCH_PROCESSOR</Applicationname>
+    <InstanceName>_Total</InstanceName>
+    <Value>0</Value>
+  </PerfCounter>
+  <PerfCounter>
+    <Name>p25</Name>
+    <Category>Processor</Category>
+    <Counter>% Processor Time</Counter>
+    <Instance>_Total</Instance>
+    <Timer>10</Timer>
+    <Applicationname>"DESPATCH_PROCESSOR</Applicationname>
+    <InstanceName>_Total</InstanceName>
+    <Value>0</Value>
+  </PerfCounter>
+  <PerfCounter>
+    <Name>p26</Name>
+    <Category>Processor</Category>
+    <Counter>% Processor Time</Counter>
+    <Instance>_Total</Instance>
+    <Timer>10</Timer>
+    <Applicationname>"DESPATCH_PROCESSOR</Applicationname>
+    <InstanceName>_Total</InstanceName>
+    <Value>0</Value>
+  </PerfCounter>
+</ArrayOfPerfCounter>

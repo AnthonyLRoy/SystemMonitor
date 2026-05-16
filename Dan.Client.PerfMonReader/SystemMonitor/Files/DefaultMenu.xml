@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<defaultmenu>
+  <menu>
+    <menuitem header="_File" name="File"  tooltip="tooltip text" command="">
+      <menuitem header="_New" name="NewDiagram" tooltip="New Diagram" command="comNewDiagram" icon=""></menuitem>
+      <menuitem header="_Open" name="OpenDiagram" tooltip="Open Diagram" command="OpenDiagram" icon=""></menuitem>
+      <menuitem header="_Close" name="CloseDiagram" tooltip="CloseDiagram" command="CloseDiagram" icon=""></menuitem>
+      <menuitem header="_New" name="NewDiagram" tooltip="New Diagram" command="ExitApplication" icon=""></menuitem>
+    </menuitem>
+    <menuitem header="_View" name="View" tooltip ="View items" command=""/>
+    <menuitem header="_Help" name="Help" tooltip ="Help items" command="">
+      <menuitem  header="_Help Topics" name="helpTopics" tooltip="Displ application help" command="comDisplauHelpTopics" icon="" />
+      <menuitem  header="_About" name="About" tooltip="Display About Dialog" command="comDisplauHelpDiaglog" icon="" />
+    </menuitem>
+  </menu>
+  <nenuitem>
+    <header name="_File" sequence="0" tooltip="File Menu" graphic="fileMenu.gif"></header>
+
+  </nenuitem>
+
+
+</defaultmenu>

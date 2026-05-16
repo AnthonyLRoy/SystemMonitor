@@ -1,0 +1,24 @@
+﻿<base:BaseUserControl x:Class="WPFControlLibrary.Controls.CommentBox"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:base="clr-namespace:WPFControlLibrary.Base"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid IsHitTestVisible="False">
+        <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+            <Grid.RowDefinitions>
+
+            </Grid.RowDefinitions>
+            <RichTextBox HorizontalAlignment="Stretch"  VerticalAlignment="Stretch">
+                <FlowDocument>
+                    <Paragraph>
+                        <Run Text="RichTextBox"/>
+                    </Paragraph>
+                </FlowDocument>
+            </RichTextBox>
+        </Grid>
+
+    </Grid>
+</base:BaseUserControl>

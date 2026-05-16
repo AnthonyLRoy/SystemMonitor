@@ -1,0 +1,252 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dan.monitor.Common", "Dan.monitor.Common\dan.monitor.Common.csproj", "{C65BADDE-6743-479D-A036-64BCEDC14B3B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dan.Common.Messages", "Dan.Common.Messages\Dan.Common.Messages.csproj", "{7926879C-D5AB-4364-AAA0-FDCA4A20ABDD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dan.Client.Monitor.Reader", "Dan.Client.Monitor.Reader\Dan.Client.Monitor.Reader.csproj", "{EB215BFD-54EF-4578-99E1-DF2B74E62777}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dan.Monitor.ServiceBusClient", "ServiceBusClient\Dan.Monitor.ServiceBusClient.csproj", "{9C297E5E-D62A-4680-B283-6EDBB7AC7688}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dan.Client.PerfMonReader", "Dan.Client.PerfMonReader\Dan.Client.PerfMonReader.csproj", "{95792DAC-F516-4440-A95A-9DFFB2C28C55}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dan.Client.SQLReader", "Dan.Client.SQLReader\Dan.Client.SQLReader.csproj", "{FB62A5EF-B9EB-468E-8441-6D812CD14595}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkerRoleWithSBQueue1", "WorkerRoleWithSBQueue1\WorkerRoleWithSBQueue1.csproj", "{1413C2B3-72CF-408D-83D2-538F4B0C871F}"
+EndProject
+Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "Dan.Server.Monitoring.EventReceiver", "Dan.Server.Monitoring.EventReceiver\Dan.Server.Monitoring.EventReceiver.ccproj", "{A5EED1A7-4A79-431E-BD4F-DD0214C651E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventReceiver", "EventReceiver\EventReceiver.csproj", "{18D16C16-A06D-439B-9940-84C797D79440}"
+EndProject
+Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "StatsApi", "StatsApi\StatsApi.ccproj", "{DB58C262-C3ED-4485-BB71-5E953DE93580}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StatsWebRole", "StatsWebRole\StatsWebRole.csproj", "{0A679D76-46AE-4FAD-92A3-387C7D2D5791}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFControlLibrary", "WPFControlLibrary\WPFControlLibrary.csproj", "{437A1A72-13B6-4D9B-9540-907CE5EC1E57}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SystemViewer", "SystemViewer\SystemViewer.csproj", "{490102FA-3208-4842-A6DA-4BFE9F367156}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebMetricsReader", "WebMetricsReader\WebMetricsReader.csproj", "{2E058C7D-A9B5-4A1C-BE7E-3D3332CDD680}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestWebReader", "TestWebReader\TestWebReader.csproj", "{31E4D01E-4726-45B0-9A59-AEC469FF06F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dan.Client.ServiceStatusReader", "Dan.Client.ServiceStatusReader\Dan.Client.ServiceStatusReader.csproj", "{7BEE76AE-F16C-4070-B775-8F714482DD40}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dan.Client.DirectoryReader", "Dan.Client.DirectoryReader\Dan.Client.DirectoryReader.csproj", "{D3DB04C5-84D0-4457-9961-D0FAA3F7F5F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dan.Client.EventLogReader", "Dan.Client.EventLogReader\Dan.Client.EventLogReader.csproj", "{22C4BE30-14CC-4468-B24C-14B904CCCAD0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dan.Client.PerformanceMonReader", "Dan.Client.PerformanceMonReader\Dan.Client.PerformanceMonReader.csproj", "{5FE092DD-0EEA-472A-B6E4-A31117BAF523}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Readers", "Readers", "{D2CC6855-01B0-4729-8AF7-F90EB87C77B4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{5A559E30-4481-4C37-9978-A06C8FE3B9C3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Azure", "Azure", "{9489F9CF-7D78-4D3D-B306-70CE95FEC667}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FrontEnds", "FrontEnds", "{DB5E3816-2775-4F09-9F76-583F681303BF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{3DC480D7-26F1-4EAE-B838-02621D4EF787}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ControlLibraries", "ControlLibraries", "{C9D5BB66-E1DD-4348-8CC7-51BE70E279EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dan.Common.Client", "Dan.Common.Client\Dan.Common.Client.csproj", "{E1DC3160-636A-471A-B77B-CFB61EBE9214}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 21
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://home:8080/tfs/danssoftware
+		SccProjectUniqueName0 = Dan.Common.Messages\\Dan.Common.Messages.csproj
+		SccProjectTopLevelParentUniqueName0 = SystemMonitor.sln
+		SccProjectName0 = Dan.Common.Messages
+		SccLocalPath0 = Dan.Common.Messages
+		SccProjectUniqueName1 = ServiceBusClient\\Dan.Monitor.ServiceBusClient.csproj
+		SccProjectTopLevelParentUniqueName1 = SystemMonitor.sln
+		SccProjectName1 = ServiceBusClient
+		SccLocalPath1 = ServiceBusClient
+		SccProjectUniqueName2 = Dan.Client.PerfMonReader\\Dan.Client.PerfMonReader.csproj
+		SccProjectTopLevelParentUniqueName2 = SystemMonitor.sln
+		SccProjectName2 = Dan.Client.PerfMonReader
+		SccLocalPath2 = Dan.Client.PerfMonReader
+		SccProjectUniqueName3 = Dan.Client.SQLReader\\Dan.Client.SQLReader.csproj
+		SccProjectTopLevelParentUniqueName3 = SystemMonitor.sln
+		SccProjectName3 = Dan.Client.SQLReader
+		SccLocalPath3 = Dan.Client.SQLReader
+		SccProjectUniqueName4 = WorkerRoleWithSBQueue1\\WorkerRoleWithSBQueue1.csproj
+		SccProjectName4 = WorkerRoleWithSBQueue1
+		SccLocalPath4 = WorkerRoleWithSBQueue1
+		SccProjectUniqueName5 = EventReceiver\\EventReceiver.csproj
+		SccProjectTopLevelParentUniqueName5 = SystemMonitor.sln
+		SccProjectName5 = EventReceiver
+		SccLocalPath5 = EventReceiver
+		SccProjectUniqueName6 = StatsApi\\StatsApi.ccproj
+		SccProjectTopLevelParentUniqueName6 = SystemMonitor.sln
+		SccProjectName6 = StatsApi
+		SccLocalPath6 = StatsApi
+		SccProjectUniqueName7 = StatsWebRole\\StatsWebRole.csproj
+		SccProjectTopLevelParentUniqueName7 = SystemMonitor.sln
+		SccProjectName7 = StatsWebRole
+		SccLocalPath7 = StatsWebRole
+		SccProjectUniqueName8 = WebMetricsReader\\WebMetricsReader.csproj
+		SccProjectName8 = WebMetricsReader
+		SccLocalPath8 = WebMetricsReader
+		SccProjectUniqueName9 = Dan.Client.ServiceStatusReader\\Dan.Client.ServiceStatusReader.csproj
+		SccProjectTopLevelParentUniqueName9 = SystemMonitor.sln
+		SccProjectName9 = Dan.Client.ServiceStatusReader
+		SccLocalPath9 = Dan.Client.ServiceStatusReader
+		SccProjectUniqueName10 = Dan.Client.DirectoryReader\\Dan.Client.DirectoryReader.csproj
+		SccProjectTopLevelParentUniqueName10 = SystemMonitor.sln
+		SccProjectName10 = Dan.Client.DirectoryReader
+		SccLocalPath10 = Dan.Client.DirectoryReader
+		SccProjectUniqueName11 = Dan.Client.EventLogReader\\Dan.Client.EventLogReader.csproj
+		SccProjectTopLevelParentUniqueName11 = SystemMonitor.sln
+		SccProjectName11 = Dan.Client.EventLogReader
+		SccLocalPath11 = Dan.Client.EventLogReader
+		SccProjectUniqueName12 = Dan.Client.PerformanceMonReader\\Dan.Client.PerformanceMonReader.csproj
+		SccProjectTopLevelParentUniqueName12 = SystemMonitor.sln
+		SccProjectName12 = Dan.Client.PerformanceMonReader
+		SccLocalPath12 = Dan.Client.PerformanceMonReader
+		SccProjectUniqueName13 = Dan.Client.Monitor.Reader\\Dan.Client.Monitor.Reader.csproj
+		SccProjectTopLevelParentUniqueName13 = SystemMonitor.sln
+		SccProjectName13 = Dan.Client.Monitor.Reader
+		SccLocalPath13 = Dan.Client.Monitor.Reader
+		SccProjectUniqueName14 = Dan.monitor.Common\\dan.monitor.Common.csproj
+		SccProjectTopLevelParentUniqueName14 = SystemMonitor.sln
+		SccProjectName14 = Dan.monitor.Common
+		SccLocalPath14 = Dan.monitor.Common
+		SccProjectUniqueName15 = Dan.Server.Monitoring.EventReceiver\\Dan.Server.Monitoring.EventReceiver.ccproj
+		SccProjectTopLevelParentUniqueName15 = SystemMonitor.sln
+		SccProjectName15 = Dan.Server.Monitoring.EventReceiver
+		SccLocalPath15 = Dan.Server.Monitoring.EventReceiver
+		SccProjectUniqueName16 = SystemViewer\\SystemViewer.csproj
+		SccProjectTopLevelParentUniqueName16 = SystemMonitor.sln
+		SccProjectName16 = SystemViewer
+		SccLocalPath16 = SystemViewer
+		SccProjectUniqueName17 = TestWebReader\\TestWebReader.csproj
+		SccProjectTopLevelParentUniqueName17 = SystemMonitor.sln
+		SccProjectName17 = TestWebReader
+		SccLocalPath17 = TestWebReader
+		SccProjectUniqueName18 = WPFControlLibrary\\WPFControlLibrary.csproj
+		SccProjectTopLevelParentUniqueName18 = SystemMonitor.sln
+		SccProjectName18 = WPFControlLibrary
+		SccLocalPath18 = WPFControlLibrary
+		SccProjectUniqueName19 = Dan.Common.Client\\Dan.Common.Client.csproj
+		SccProjectTopLevelParentUniqueName19 = SystemMonitor.sln
+		SccProjectName19 = Dan.Common.Client
+		SccLocalPath19 = Dan.Common.Client
+		SccLocalPath20 = .
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C65BADDE-6743-479D-A036-64BCEDC14B3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C65BADDE-6743-479D-A036-64BCEDC14B3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C65BADDE-6743-479D-A036-64BCEDC14B3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C65BADDE-6743-479D-A036-64BCEDC14B3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7926879C-D5AB-4364-AAA0-FDCA4A20ABDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7926879C-D5AB-4364-AAA0-FDCA4A20ABDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7926879C-D5AB-4364-AAA0-FDCA4A20ABDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7926879C-D5AB-4364-AAA0-FDCA4A20ABDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB215BFD-54EF-4578-99E1-DF2B74E62777}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB215BFD-54EF-4578-99E1-DF2B74E62777}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB215BFD-54EF-4578-99E1-DF2B74E62777}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB215BFD-54EF-4578-99E1-DF2B74E62777}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C297E5E-D62A-4680-B283-6EDBB7AC7688}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C297E5E-D62A-4680-B283-6EDBB7AC7688}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C297E5E-D62A-4680-B283-6EDBB7AC7688}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C297E5E-D62A-4680-B283-6EDBB7AC7688}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95792DAC-F516-4440-A95A-9DFFB2C28C55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95792DAC-F516-4440-A95A-9DFFB2C28C55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95792DAC-F516-4440-A95A-9DFFB2C28C55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95792DAC-F516-4440-A95A-9DFFB2C28C55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB62A5EF-B9EB-468E-8441-6D812CD14595}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB62A5EF-B9EB-468E-8441-6D812CD14595}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB62A5EF-B9EB-468E-8441-6D812CD14595}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB62A5EF-B9EB-468E-8441-6D812CD14595}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1413C2B3-72CF-408D-83D2-538F4B0C871F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1413C2B3-72CF-408D-83D2-538F4B0C871F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1413C2B3-72CF-408D-83D2-538F4B0C871F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1413C2B3-72CF-408D-83D2-538F4B0C871F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5EED1A7-4A79-431E-BD4F-DD0214C651E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5EED1A7-4A79-431E-BD4F-DD0214C651E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5EED1A7-4A79-431E-BD4F-DD0214C651E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5EED1A7-4A79-431E-BD4F-DD0214C651E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18D16C16-A06D-439B-9940-84C797D79440}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18D16C16-A06D-439B-9940-84C797D79440}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18D16C16-A06D-439B-9940-84C797D79440}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18D16C16-A06D-439B-9940-84C797D79440}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB58C262-C3ED-4485-BB71-5E953DE93580}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB58C262-C3ED-4485-BB71-5E953DE93580}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB58C262-C3ED-4485-BB71-5E953DE93580}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB58C262-C3ED-4485-BB71-5E953DE93580}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A679D76-46AE-4FAD-92A3-387C7D2D5791}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A679D76-46AE-4FAD-92A3-387C7D2D5791}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A679D76-46AE-4FAD-92A3-387C7D2D5791}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A679D76-46AE-4FAD-92A3-387C7D2D5791}.Release|Any CPU.Build.0 = Release|Any CPU
+		{437A1A72-13B6-4D9B-9540-907CE5EC1E57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{437A1A72-13B6-4D9B-9540-907CE5EC1E57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{437A1A72-13B6-4D9B-9540-907CE5EC1E57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{437A1A72-13B6-4D9B-9540-907CE5EC1E57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{490102FA-3208-4842-A6DA-4BFE9F367156}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{490102FA-3208-4842-A6DA-4BFE9F367156}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{490102FA-3208-4842-A6DA-4BFE9F367156}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{490102FA-3208-4842-A6DA-4BFE9F367156}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E058C7D-A9B5-4A1C-BE7E-3D3332CDD680}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E058C7D-A9B5-4A1C-BE7E-3D3332CDD680}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E058C7D-A9B5-4A1C-BE7E-3D3332CDD680}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E058C7D-A9B5-4A1C-BE7E-3D3332CDD680}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31E4D01E-4726-45B0-9A59-AEC469FF06F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31E4D01E-4726-45B0-9A59-AEC469FF06F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31E4D01E-4726-45B0-9A59-AEC469FF06F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31E4D01E-4726-45B0-9A59-AEC469FF06F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BEE76AE-F16C-4070-B775-8F714482DD40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BEE76AE-F16C-4070-B775-8F714482DD40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BEE76AE-F16C-4070-B775-8F714482DD40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BEE76AE-F16C-4070-B775-8F714482DD40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3DB04C5-84D0-4457-9961-D0FAA3F7F5F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3DB04C5-84D0-4457-9961-D0FAA3F7F5F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3DB04C5-84D0-4457-9961-D0FAA3F7F5F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3DB04C5-84D0-4457-9961-D0FAA3F7F5F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22C4BE30-14CC-4468-B24C-14B904CCCAD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22C4BE30-14CC-4468-B24C-14B904CCCAD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22C4BE30-14CC-4468-B24C-14B904CCCAD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22C4BE30-14CC-4468-B24C-14B904CCCAD0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FE092DD-0EEA-472A-B6E4-A31117BAF523}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FE092DD-0EEA-472A-B6E4-A31117BAF523}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FE092DD-0EEA-472A-B6E4-A31117BAF523}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FE092DD-0EEA-472A-B6E4-A31117BAF523}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1DC3160-636A-471A-B77B-CFB61EBE9214}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1DC3160-636A-471A-B77B-CFB61EBE9214}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1DC3160-636A-471A-B77B-CFB61EBE9214}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1DC3160-636A-471A-B77B-CFB61EBE9214}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C65BADDE-6743-479D-A036-64BCEDC14B3B} = {5A559E30-4481-4C37-9978-A06C8FE3B9C3}
+		{7926879C-D5AB-4364-AAA0-FDCA4A20ABDD} = {5A559E30-4481-4C37-9978-A06C8FE3B9C3}
+		{EB215BFD-54EF-4578-99E1-DF2B74E62777} = {D2CC6855-01B0-4729-8AF7-F90EB87C77B4}
+		{9C297E5E-D62A-4680-B283-6EDBB7AC7688} = {5A559E30-4481-4C37-9978-A06C8FE3B9C3}
+		{95792DAC-F516-4440-A95A-9DFFB2C28C55} = {D2CC6855-01B0-4729-8AF7-F90EB87C77B4}
+		{FB62A5EF-B9EB-468E-8441-6D812CD14595} = {D2CC6855-01B0-4729-8AF7-F90EB87C77B4}
+		{A5EED1A7-4A79-431E-BD4F-DD0214C651E2} = {9489F9CF-7D78-4D3D-B306-70CE95FEC667}
+		{18D16C16-A06D-439B-9940-84C797D79440} = {9489F9CF-7D78-4D3D-B306-70CE95FEC667}
+		{DB58C262-C3ED-4485-BB71-5E953DE93580} = {9489F9CF-7D78-4D3D-B306-70CE95FEC667}
+		{0A679D76-46AE-4FAD-92A3-387C7D2D5791} = {9489F9CF-7D78-4D3D-B306-70CE95FEC667}
+		{437A1A72-13B6-4D9B-9540-907CE5EC1E57} = {C9D5BB66-E1DD-4348-8CC7-51BE70E279EE}
+		{490102FA-3208-4842-A6DA-4BFE9F367156} = {DB5E3816-2775-4F09-9F76-583F681303BF}
+		{31E4D01E-4726-45B0-9A59-AEC469FF06F8} = {3DC480D7-26F1-4EAE-B838-02621D4EF787}
+		{7BEE76AE-F16C-4070-B775-8F714482DD40} = {D2CC6855-01B0-4729-8AF7-F90EB87C77B4}
+		{D3DB04C5-84D0-4457-9961-D0FAA3F7F5F4} = {D2CC6855-01B0-4729-8AF7-F90EB87C77B4}
+		{22C4BE30-14CC-4468-B24C-14B904CCCAD0} = {D2CC6855-01B0-4729-8AF7-F90EB87C77B4}
+		{5FE092DD-0EEA-472A-B6E4-A31117BAF523} = {D2CC6855-01B0-4729-8AF7-F90EB87C77B4}
+		{E1DC3160-636A-471A-B77B-CFB61EBE9214} = {5A559E30-4481-4C37-9978-A06C8FE3B9C3}
+	EndGlobalSection
+EndGlobal

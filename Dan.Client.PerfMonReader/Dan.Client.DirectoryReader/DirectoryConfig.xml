@@ -1,0 +1,33 @@
+﻿<directories>
+  <directory>
+    <counter>
+      <countername>Danny1</countername>
+      <uncdirectory>\\home\c$\Temp</uncdirectory>
+      <filter>*.*</filter>
+      <type>count</type>
+      <schedule>
+        <daypattern>1111111</daypattern>
+        <start>07:15:00</start>
+        <end>21:15:00</end>
+        <frequency>S</frequency>
+        <every>30</every>
+      </schedule>
+    </counter>
+  </directory>
+  <directory >
+    <counter>
+      <countername>Danny2</countername>
+      <uncdirectory>\\home\c$\Temp</uncdirectory>
+      <filter>*.xml</filter>
+      <type>count</type>
+      <schedule>
+        <daypattern>1111111</daypattern>
+        <start>07:15:00</start>
+        <end>21:15:00</end>
+        <frequency>S</frequency>
+        <every>30</every>
+      </schedule>
+    </counter>
+  </directory>
+</directories>
+

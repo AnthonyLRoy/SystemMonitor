@@ -1,0 +1,28 @@
+﻿<p:BaseUserControl  x:Class="WPFControlLibrary.Controls.DataTableControl"  xmlns:p="clr-namespace:WPFControlLibrary.Base"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" d:DesignHeight="68">
+
+    <Grid Tag="maingrid" UseLayoutRounding="True" IsHitTestVisible="False">
+        <Grid.ContextMenu>
+            <ContextMenu/>
+        </Grid.ContextMenu>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="13*"/>
+        </Grid.RowDefinitions>
+        <ProgressBar Grid.Row="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="0,0,0,25" Grid.RowSpan="2"  >
+            <ProgressBar.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.169"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </ProgressBar.RenderTransform>
+        </ProgressBar>
+        <Label Content="bumodoclast" Foreground="FloralWhite" HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Grid.Row="1" Height="28"/>
+    </Grid>
+</p:BaseUserControl>

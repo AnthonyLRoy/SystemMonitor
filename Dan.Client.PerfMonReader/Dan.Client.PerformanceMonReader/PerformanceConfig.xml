@@ -1,0 +1,28 @@
+﻿<perfcounters>
+  <perfcounter>
+    <name>WSX-13G-356L8T-Processor Speed</name>
+    <category>Processor</category>
+    <countername>% Processor Time</countername>
+    <instance>_Total</instance>
+      <schedule>
+        <daypattern>1111111</daypattern>
+        <start>07:15:00</start>
+        <end>21:15:00</end>
+        <frequency>S</frequency>
+        <every>30</every>
+      </schedule>
+  </perfcounter>
+  <perfcounter>
+    <name>WSX-13G-356L8T-MemoryAvailable</name>
+    <category>Memory</category>
+    <countername>Available Bytes</countername>
+    <instance></instance>
+    <schedule>
+      <daypattern>1111111</daypattern>
+      <start>07:15:00</start>
+      <end>21:15:00</end>
+      <frequency>S</frequency>
+      <every>30</every>
+    </schedule>
+  </perfcounter>
+</perfcounters>

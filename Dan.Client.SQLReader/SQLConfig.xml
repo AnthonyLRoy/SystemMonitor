@@ -1,0 +1,30 @@
+﻿<databases>
+  <database>
+    <counter>
+      <countername>Danny1</countername>
+      <connectionstring>Server=home;Database=testDatabase;Trusted_Connection=True; </connectionstring>
+        <query>Select count(*) from TestTable</query>
+      <schedule>
+        <daypattern>1111111</daypattern>
+        <start>07:15:00</start>
+        <end>21:15:00</end>
+        <frequency>S</frequency>
+        <every>30</every>
+      </schedule>
+    </counter>
+  </database>
+  <database >
+    <counter>
+      <countername>Danny2</countername>
+      <connectionstring>Server=home;Database=testDatabase;Trusted_Connection=True; </connectionstring>
+      <query>Select count(*) from TestTable</query>
+      <schedule>
+        <daypattern>1111111</daypattern>
+        <start>07:15:00</start>
+        <end>21:15:00</end>
+        <frequency>S</frequency>
+        <every>30</every>
+      </schedule>
+    </counter>
+  </database>
+</databases>

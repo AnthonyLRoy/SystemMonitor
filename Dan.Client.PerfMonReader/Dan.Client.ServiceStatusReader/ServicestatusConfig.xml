@@ -1,0 +1,26 @@
+﻿<services>
+  <service>
+    <servicedescription>A description of a service</servicedescription>
+    <machinename></machinename>
+    <servicename>Servicename</servicename>
+    <schedule>
+      <daypattern>1111111</daypattern>
+      <start>07:15:00</start>
+      <end>21:15:00</end>
+      <frequency>S</frequency>
+      <every>30</every>
+    </schedule>
+  </service>
+  <service>
+    <servicedescription>A description of a service</servicedescription>
+    <machinename></machinename>
+    <servicename>Servicename</servicename>
+    <schedule>
+      <daypattern>1111111</daypattern>
+      <start>07:15:00</start>
+      <end>21:15:00</end>
+      <frequency>S</frequency>
+      <every>30</every>
+    </schedule>
+  </service>
+</services>

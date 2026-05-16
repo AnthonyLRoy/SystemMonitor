@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="directories">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" name="directory">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="counter">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="countername" type="xs:string" minOccurs ="1" maxOccurs="1" />
+                    <xs:element name="uncdirectory" type="xs:string" minOccurs="1" maxOccurs="1" />
+                    <xs:element name="filter" type="xs:string" minOccurs="1" maxOccurs="1" />
+                    <xs:element name="type" minOccurs="1" maxOccurs="1" >
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:enumeration value="count"/>
+                          <xs:enumeration value="size"/>
+                          <xs:enumeration value="lastmodified"/>
+                          <xs:enumeration value ="oldest"/>
+                        </xs:restriction>
+                     </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="schedule">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="daypattern" minOccurs="1" maxOccurs="1" >
+                            <xs:simpleType>
+                              <xs:restriction base="xs:string">
+                                <xs:length value="7"/>
+                              </xs:restriction>
+                            </xs:simpleType>
+                          </xs:element>
+                          <xs:element name="start" type="xs:time" minOccurs="1" maxOccurs="1" />
+                          <xs:element name="end" type="xs:time" minOccurs="1" maxOccurs="1"  />
+                          <xs:element name="frequency" minOccurs="1" maxOccurs="1" >
+                            <xs:simpleType>
+                              <xs:restriction base="xs:string">
+                                <xs:enumeration value ="S"/>
+                                <xs:enumeration value ="M"/>
+                                <xs:enumeration value ="H"/>
+                              </xs:restriction>
+                            </xs:simpleType>
+                          </xs:element>
+                          <xs:element name="every" type="xs:int" minOccurs="1" maxOccurs="1"  />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
